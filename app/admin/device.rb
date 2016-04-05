@@ -12,6 +12,8 @@ ActiveAdmin.register Device do
 #   permitted << :other if resource.something?
 #   permitted
 # end
+permit_params :id_device, :name, :producer, :serial_number, :date_buy, :date_limited,
+                            :description, :status, :mac_address
 csv_importable :columns => [:id_device, :name, :producer, :serial_number, :date_buy, :date_limited,
                             :description, :status, :mac_address]
 index do

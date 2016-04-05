@@ -12,6 +12,6 @@ ActiveAdmin.register Employee do
 #   permitted << :other if resource.something?
 #   permitted
 # end
-# permit_params :id_employee, :name, :team, :date_join, :note, :device
+permit_params :id_employee, :name, :team, :date_join, :note, :device
 csv_importable :columns => [:id_employee, :name, :team, :date_join, :note, :device]
 end
